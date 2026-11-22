@@ -1,4 +1,4 @@
-## 中央 112502505 資工三A 王昭尹 LLM Wiki：用 LLM Wiki 教「LLM Wiki 是什麼」
+## 中央 112502505 資工四A 王昭尹 LLM Wiki：用 LLM Wiki 教「LLM Wiki 是什麼」
 
 ### 1. LLM Wiki 主題與簡介
 
