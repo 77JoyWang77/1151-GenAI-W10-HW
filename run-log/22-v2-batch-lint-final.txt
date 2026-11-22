@@ -1,0 +1,3 @@
+LLM Wiki lint｜28 頁、5 個來源
+  WARN    wiki/log.md: 斷掉的連結 [[llm-wiki-vs-zettelkasten]]
+結果： PASS / 1 warnings

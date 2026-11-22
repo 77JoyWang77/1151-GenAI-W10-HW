@@ -1,0 +1,15 @@
+LLM Wiki lint｜21 頁、5 個來源
+  ERROR   wiki/queries/teaching-deck-outline.md:11: 數字 01 不在來源 ['S1'] 的 raw 卡片中 → - 01｜LLM Wiki 是什麼？讓 AI 幫你維護一本會長大的筆記｜根據 [
+  ERROR   wiki/queries/teaching-deck-outline.md:12: 數字 02 不在來源 ['S1'] 的 raw 卡片中 → - 02｜你丟一堆 PDF 給 AI，隔天再問，它記得昨天整理過的東西嗎？｜根據
+  ERROR   wiki/queries/teaching-deck-outline.md:13: 數字 03 不在來源 ['S1'] 的 raw 卡片中 → - 03｜LLM Wiki：把整理從提問時移到資料進來時｜根據 [[overvi
+  ERROR   wiki/queries/teaching-deck-outline.md:14: 數字 04 不在來源 ['S1', 'S2'] 的 raw 卡片中 → - 04｜RAG vs LLM Wiki｜根據 [[llm-wiki-vs-ra
+  ERROR   wiki/queries/teaching-deck-outline.md:15: 數字 05 不在來源 ['S1', 'S5'] 的 raw 卡片中 → - 05｜三層結構：誰可以改什麼？｜根據 [[three-layers]] [S
+  ERROR   wiki/queries/teaching-deck-outline.md:16: 數字 06 不在來源 ['S1', 'S3', 'S5'] 的 raw 卡片中 → - 06｜Ingest：先討論，後生成｜根據 [[ingest]] [S1, S
+  ERROR   wiki/queries/teaching-deck-outline.md:17: 數字 07 不在來源 ['S1', 'S5'] 的 raw 卡片中 → - 07｜Query：對 wiki 提問，好答案存回去｜根據 [[query]]
+  ERROR   wiki/queries/teaching-deck-outline.md:18: 數字 08 不在來源 ['S1', 'S2'] 的 raw 卡片中 → - 08｜Lint：定期健康檢查｜根據 [[lint]] [S1, S2]
+  ERROR   wiki/queries/teaching-deck-outline.md:19: 數字 09 不在來源 ['S1'] 的 raw 卡片中 → - 09｜index.md 和 log.md：給 LLM 的地圖和日記｜根據 [
+  ERROR   wiki/queries/teaching-deck-outline.md:21: 數字 11 不在來源 ['S2', 'S3'] 的 raw 卡片中 → - 11｜wiki 寫得越有把握，錯的時候越難被發現｜根據 [[failure-
+  ERROR   wiki/queries/teaching-deck-outline.md:22: 數字 12 不在來源 ['S2', 'S3'] 的 raw 卡片中 → - 12｜三個方向：可追溯、早發現、可重建｜根據 [[mitigations]]
+  ERROR   wiki/queries/teaching-deck-outline.md:23: 數字 13 不在來源 ['S1', 'S5'] 的 raw 卡片中 → - 13｜自己做一個 LLM Wiki：五個步驟｜根據 [[how-to-sta
+  ERROR   wiki/queries/teaching-deck-outline.md:24: 數字 14 不在來源 ['S1', 'S2'] 的 raw 卡片中 → - 14｜小測驗｜根據 [[llm-wiki-vs-rag]]、[[three-
+結果： FAIL（13 errors） / 0 warnings

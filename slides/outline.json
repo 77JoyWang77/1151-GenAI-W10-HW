@@ -1,0 +1,329 @@
+{
+ "query": "用這個 wiki 做一份給初學者的「LLM Wiki 是什麼？」教學簡報",
+ "audience": "沒聽過 LLM Wiki、知道 ChatGPT 但不懂 RAG 的人",
+ "teaching_arc": [
+  "情境引入",
+  "核心想法",
+  "結構與操作",
+  "為什麼可行",
+  "風險與改善",
+  "動手做",
+  "測驗",
+  "回顧"
+ ],
+ "slides": [
+  {
+   "title": "LLM Wiki 是什麼？讓 AI 幫你維護一本會長大的筆記",
+   "kind": "title",
+   "wiki": [
+    "overview"
+   ],
+   "src": [
+    "S1"
+   ],
+   "points": [
+    "給沒聽過這個詞的人：看懂它解決什麼、怎麼運作、有什麼風險"
+   ]
+  },
+  {
+   "title": "你丟一堆 PDF 給 AI，隔天再問，它記得昨天整理過的東西嗎？",
+   "wiki": [
+    "overview",
+    "wiki-accumulates-rag-rederives"
+   ],
+   "src": [
+    "S1"
+   ],
+   "introduces": [
+    "rag"
+   ],
+   "points": [
+    "RAG：提問時先找相關片段再交給 LLM",
+    "NotebookLM、ChatGPT 上傳多半如此",
+    "每次重新推導，沒有累積"
+   ]
+  },
+  {
+   "title": "LLM Wiki：把整理從提問時移到資料進來時",
+   "wiki": [
+    "overview"
+   ],
+   "src": [
+    "S1"
+   ],
+   "introduces": [
+    "llm-wiki",
+    "compounding"
+   ],
+   "uses": [
+    "rag"
+   ],
+   "points": [
+    "LLM 維護互相連結的 markdown 頁",
+    "新資料進來就整合：摘要、交叉引用、矛盾",
+    "compounding：越積越完整"
+   ]
+  },
+  {
+   "title": "RAG vs LLM Wiki",
+   "wiki": [
+    "wiki-accumulates-rag-rederives",
+    "synthesis-cost-moved-to-write-time"
+   ],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "uses": [
+    "rag",
+    "llm-wiki"
+   ],
+   "points": [
+    "整理時間點：query time vs ingest time",
+    "存原始片段 vs 存綜整頁",
+    "成本前置在寫入時，不是免費"
+   ]
+  },
+  {
+   "title": "三層結構：誰可以改什麼？",
+   "wiki": [
+    "three-layers"
+   ],
+   "src": [
+    "S1",
+    "S5"
+   ],
+   "introduces": [
+    "schema"
+   ],
+   "uses": [
+    "llm-wiki"
+   ],
+   "points": [
+    "Raw sources 只讀不改",
+    "Wiki 由 LLM 寫",
+    "Schema 人與 LLM 一起改",
+    "頁面模板：frontmatter + TLDR + 內文 + 反方論點"
+   ]
+  },
+  {
+   "title": "Ingest：先討論，後生成",
+   "wiki": [
+    "ingest"
+   ],
+   "src": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "introduces": [
+    "ingest"
+   ],
+   "uses": [
+    "schema"
+   ],
+   "points": [
+    "分類 → 討論 → 寫摘要 → 改相關頁 → 記 log",
+    "一篇來源可能動到 10–15 頁",
+    "隱藏成本：決定併進哪一頁"
+   ]
+  },
+  {
+   "title": "Query：對 wiki 提問，好答案存回去",
+   "wiki": [
+    "query",
+    "index-and-log"
+   ],
+   "src": [
+    "S1",
+    "S5"
+   ],
+   "introduces": [
+    "query"
+   ],
+   "uses": [
+    "ingest"
+   ],
+   "points": [
+    "先讀 index.md 再進相關頁",
+    "附引用回答，輸出形式不限",
+    "file back：存成 query-result 頁"
+   ]
+  },
+  {
+   "title": "Lint：定期健康檢查",
+   "wiki": [
+    "lint",
+    "catch-contradictions-at-ingest"
+   ],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "introduces": [
+    "lint"
+   ],
+   "uses": [
+    "ingest"
+   ],
+   "points": [
+    "矛盾、過時、孤兒頁",
+    "缺概念、缺連結、資料缺口",
+    "矛盾最好在 ingest 當下就抓"
+   ]
+  },
+  {
+   "title": "index.md 和 log.md：給 LLM 的地圖和日記",
+   "wiki": [
+    "index-and-log"
+   ],
+   "src": [
+    "S1"
+   ],
+   "uses": [
+    "ingest",
+    "query"
+   ],
+   "points": [
+    "index：內容分類、每頁一行摘要",
+    "log：時間順序、只追加",
+    "約 100 個來源、數百頁內靠 index 就夠"
+   ]
+  },
+  {
+   "title": "人會放棄 wiki，是因為維護太累",
+   "wiki": [
+    "llm-makes-maintenance-cheap",
+    "tool-stack"
+   ],
+   "src": [
+    "S1"
+   ],
+   "uses": [
+    "llm-wiki"
+   ],
+   "points": [
+    "維護成本長得比價值快",
+    "LLM 不厭倦 bookkeeping",
+    "人問問題、判斷意義；LLM 做雜事"
+   ]
+  },
+  {
+   "title": "wiki 寫得越有把握，錯的時候越難被發現",
+   "wiki": [
+    "failure-modes",
+    "stale-wiki-looks-like-misinformation",
+    "index-enough-at-moderate-scale",
+    "human-may-not-internalize"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "uses": [
+    "llm-wiki",
+    "lint"
+   ],
+   "points": [
+    "漂移：過時的 wiki 像錯誤資訊",
+    "規模：最可信的來源說約 100 個來源內靠 index 就夠；評論與教學認為 100–200 頁就吃力",
+    "出處不明",
+    "內化不足"
+   ]
+  },
+  {
+   "title": "三個方向：可追溯、早發現、可重建",
+   "wiki": [
+    "mitigations",
+    "topic-aggregation-has-boundary-problem"
+   ],
+   "src": [
+    "S2",
+    "S3"
+   ],
+   "uses": [
+    "llm-wiki"
+   ],
+   "points": [
+    "標出處、不可變原子筆記",
+    "confidence / status，當下抓矛盾",
+    "資料庫為準、重新生成",
+    "機械工作交給程式",
+    "人自己想過並複核"
+   ]
+  },
+  {
+   "title": "自己做一個 LLM Wiki：五個步驟",
+   "wiki": [
+    "how-to-start",
+    "tool-stack"
+   ],
+   "src": [
+    "S1",
+    "S5"
+   ],
+   "uses": [
+    "schema",
+    "ingest",
+    "lint"
+   ],
+   "points": [
+    "選主題、準備 5–10 篇",
+    "建資料夾、git init",
+    "先寫 schema",
+    "一篇篇 ingest、每篇 commit",
+    "定期 lint"
+   ]
+  },
+  {
+   "title": "小測驗",
+   "kind": "quiz",
+   "wiki": [
+    "wiki-accumulates-rag-rederives",
+    "three-layers",
+    "stale-wiki-looks-like-misinformation"
+   ],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "uses": [
+    "rag",
+    "llm-wiki",
+    "ingest",
+    "lint"
+   ],
+   "points": [
+    "Q1 整理發生的時間點",
+    "Q2 哪一層只讀",
+    "Q3 為什麼過時的 wiki 更危險"
+   ]
+  },
+  {
+   "title": "重點回顧",
+   "kind": "summary",
+   "wiki": [
+    "overview",
+    "s1-karpathy-gist",
+    "s2-critique-and-comments",
+    "s3-zettelkasten-review",
+    "s4-hjarni-hosted",
+    "s5-analyticsvidhya-how-to"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "points": [
+    "持續維護、會累積",
+    "三層 + 三個操作",
+    "成本前置、要標出處、人要自己想過",
+    "來源列表 S1–S5"
+   ]
+  }
+ ]
+}

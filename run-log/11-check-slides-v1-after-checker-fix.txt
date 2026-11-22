@@ -1,0 +1,7 @@
+Slides check｜index.html｜15 張
+  ERROR   slide 01: 數字 15 不在 wiki 頁 ['overview'] 中
+  ERROR   slide 02: 數字 10 不在 wiki 頁 ['overview', 'llm-wiki-vs-rag'] 中
+  ERROR   slide 04: 數字 11 不在 wiki 頁 ['llm-wiki-vs-rag'] 中
+  ERROR   slide 14: 沒有標 data-wiki，看不出內容根據哪一頁
+  ERROR   slide 15: 引用 ['S3', 'S4', 'S5']，但對應的 wiki 頁沒有這個來源（簡報自己加了 wiki 沒有的內容？）
+結果： FAIL（5 errors） / 0 warnings

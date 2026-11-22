@@ -1,0 +1,3 @@
+LLM Wiki lint｜18 頁、5 個來源
+  WARN    raw/S5 還沒有對應的 sources/s5-*.md 摘要頁
+結果： PASS / 1 warnings

@@ -1,0 +1,14 @@
+# 版面修正後：7 種視窗尺寸的溢出 / 壓到頁尾檢查
+1280x800: ok
+1440x900: ok
+1024x768: ok
+900x700: ok
+820x600: ok
+700x800: ok
+390x844: ok
+
+# sandbox iframe console
+sandbox 換頁後: 4 / 15 | 一般開啟 #5: 5 / 15 | 錯誤: 無
+
+Slides check｜index.html｜15 張
+結果： PASS / 0 warnings

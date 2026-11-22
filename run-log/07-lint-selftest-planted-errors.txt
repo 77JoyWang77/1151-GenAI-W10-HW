@@ -1,0 +1,7 @@
+LLM Wiki lint｜20 頁、5 個來源
+  ERROR   wiki/concepts/failure-modes.md:17: 數字 500 不在來源 ['S2'] 的 raw 卡片中 → - 約 500 個來源時開始出問題 [S2]
+  ERROR   wiki/concepts/query.md:5: bullet 沒有來源標記 → - LLM 先找相關頁面（從 index 開始），讀完後附引用回答
+  ERROR   wiki/concepts/query.md:6: bullet 沒有來源標記 → - 輸出形式不限：markdown、表格、投影片 (Marp)、圖表
+  ERROR   wiki/concepts/query.md:9: bullet 沒有來源標記 → - 好的回答可以存回 wiki 成為新頁面，讓「探索」本身也會累積
+  WARN    wiki/concepts/query.md: frontmatter 列了 ['S1'] 但內文沒引用
+結果： FAIL（4 errors） / 1 warnings

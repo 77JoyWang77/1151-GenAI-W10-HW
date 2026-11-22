@@ -1,0 +1,7 @@
+LLM Wiki lint｜28 頁、5 個來源
+  ERROR   wiki/queries/teaching-deck-outline.md: 斷掉的連結 [[llm-wiki-vs-rag]]
+  ERROR   wiki/queries/teaching-deck-outline.md: 斷掉的連結 [[llm-wiki-vs-rag]]
+  ERROR   wiki/queries/teaching-deck-outline.md: 斷掉的連結 [[llm-wiki-vs-zettelkasten]]
+  ERROR   wiki/queries/teaching-deck-outline.md: 斷掉的連結 [[llm-wiki-vs-rag]]
+  WARN    wiki/log.md: 斷掉的連結 [[llm-wiki-vs-zettelkasten]]
+結果： FAIL（4 errors） / 1 warnings

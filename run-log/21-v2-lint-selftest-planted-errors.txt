@@ -1,0 +1,8 @@
+LLM Wiki lint｜28 頁、5 個來源
+  ERROR   wiki/claims/hosted-wiki-tradeoff.md:6: 原句不在 raw/S4 的「## 原句」中 → One machine, one wiki only.
+  ERROR   wiki/claims/hosted-wiki-tradeoff.md:7: 只引用產品文的說法要加「（廠商觀點）」→ - 託管 + MCP server 讓多個 client 讀寫同一份 wiki 
+  ERROR   wiki/claims/index-enough-at-moderate-scale.md:13: 數字 200 不在來源 ['S1'] 的 raw 卡片中 → - 差在哪：S1 說的是「來源數約 100」，S5、S2 說的是「頁數約 100
+  ERROR   wiki/claims/index-enough-at-moderate-scale.md:13: 數字 5 不在來源 ['S1'] 的 raw 卡片中 → - 差在哪：S1 說的是「來源數約 100」，S5、S2 說的是「頁數約 100
+  ERROR   wiki/claims/index-enough-at-moderate-scale.md: 「主張」引用的來源 rank 3 比「註記」的 rank 1 還不可信，取捨反了
+  WARN    wiki/log.md: 斷掉的連結 [[llm-wiki-vs-zettelkasten]]
+結果： FAIL（9 errors） / 1 warnings

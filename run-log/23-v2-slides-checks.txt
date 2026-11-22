@@ -1,0 +1,16 @@
+# 大綱
+Slides check｜outline.json｜15 張
+結果： PASS / 0 warnings
+
+# HTML vs 大綱
+Slides check｜index.html｜15 張
+結果： PASS / 0 warnings
+
+# 7 種尺寸（手機頁尾改成正常排版後）
+1280x800: ok
+1440x900: ok
+1024x768: ok
+900x700: ok
+820x600: ok
+700x800: ok
+390x844: ok

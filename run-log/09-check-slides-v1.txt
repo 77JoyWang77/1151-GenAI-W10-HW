@@ -1,0 +1,8 @@
+Slides check｜index.html｜15 張
+  ERROR   slide 01: 數字 15 不在 wiki 頁 ['overview'] 中
+  ERROR   slide 07: 數字 3 不在 wiki 頁 ['query', 'index-and-log'] 中
+  ERROR   slide 08: 數字 3 不在 wiki 頁 ['lint'] 中
+  ERROR   slide 13: 數字 3 不在 wiki 頁 ['how-to-start', 'tool-stack'] 中
+  ERROR   slide 15: 引用 ['S3', 'S4', 'S5']，但對應的 wiki 頁沒有這個來源（簡報自己加了 wiki 沒有的內容？）
+  ERROR   slide 15: 數字 04 不在 wiki 頁 ['overview'] 中
+結果： FAIL（6 errors） / 0 warnings
